@@ -1,0 +1,23 @@
+{
+  "name": "canvas_background_floaters",
+  "version": "1.0.0",
+  "description": "floaters background in canvas",
+  "main": "floaters.js",
+  "scripts": {
+    "lite": "lite-server",
+    "start": "npm run lite"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Plasnid/canvas_background_floaters.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Plasnid/canvas_background_floaters/issues"
+  },
+  "homepage": "https://github.com/Plasnid/canvas_background_floaters#readme",
+  "devDependencies": {
+    "lite-server": "^2.5.4"
+  }
+}
