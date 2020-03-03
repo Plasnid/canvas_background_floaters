@@ -29,9 +29,9 @@ class Particle{
 }
 
 class Floatation{
-    constructor(numBubbles,canv){
+    constructor(numBubbles,canv,cont){
         this.canvas = canv;
-        this.ctx = this.canvas.getContext("2d");
+        this.ctx = this.canvas.getContext(cont);
         this.ctx.canvas.width = window.innerWidth;
         this.ctx.canvas.height = window.innerHeight;
         this.particleArray = [];
@@ -54,4 +54,4 @@ class Floatation{
         }
     }
 }
-let floaters = new Floatation(100,document.querySelector("#canvas1"));
+let floaters = new Floatation(100,document.querySelector("#canvas1"), "2d");
