@@ -37,8 +37,8 @@ class Floatation{
         this.particleArray = [];
         for(let i=0;i<numBubbles;i++){
             let size = Math.random()*30;
-            let x = Math.random() * (innerWidth - size *2);
-            let y = Math.random() * (innerHeight - size *2);
+            let x = size + (Math.random() * (innerWidth - (size*2)));
+            let y = size + (Math.random() * (innerHeight - (size*2)));
             let directionX = (Math.random() * 0.4) - 0.2;
             let directionY = (Math.random() * 0.4) - 0.2;
             let color = `rgb(${Math.floor(Math.random()*256)},${Math.floor(Math.random()*256)},${Math.floor(Math.random()*256)})`;
@@ -54,4 +54,4 @@ class Floatation{
         }
     }
 }
-let floaters = new Floatation(100,document.querySelector("#canvas1"), "2d");
+let floaters = new Floatation(60,document.querySelector("#canvas1"), "2d");
